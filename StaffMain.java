@@ -26,14 +26,14 @@ public class StaffMain {
 	public static void main(String[] args) {
 		List<Applicant> listApplicant = new ArrayList<Applicant>();
 		DecimalFormat df = new DecimalFormat("0.00");
-		Scanner s = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number of applicants to accept: ");
-		int num = Integer.parseInt(s.nextLine());
+		int n = Integer.parseInt(s.nextLine());
 		
-		for(int i=0;i<num;i++) {
+		for(int i=0;i<n;i++) {
 			try {
 			System.out.println("Enter applicant details: ");
-			String applDetails = s.nextLine();
+			String applDetails = sc.nextLine();
 			
 			String [] detailsSplit = applDetails.split(",");
 			double sub1 = Double.parseDouble(detailsSplit[1]);

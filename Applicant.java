@@ -10,7 +10,7 @@ public class Applicant {
 	private Double total;
 	private Double percentage;
 	
-	private static int IdGen = 100;
+	private static int IdGenerator = 100;
 	
 	public Applicant() {
 		super();
@@ -20,7 +20,7 @@ public class Applicant {
 	public Applicant(String name, Double subject1Mark, Double subject2Mark, Double subject3Mark, Double total,
 			Double percentage) {
 		super();
-		this.id = ++IdGen;
+		this.id = ++IdGenerator;
 		this.name = name;
 		this.subject1Mark = subject1Mark;
 		this.subject2Mark = subject2Mark;
